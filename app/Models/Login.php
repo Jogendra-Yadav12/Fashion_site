@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Login extends Model
+{
+    use HasFactory;
+    #upload function
+    protected $table="login";
+    
+    protected $fillable = [
+        'name',
+        'email',
+        'number',
+        'password',
+        'user_type'
+      ];
+   
+}
